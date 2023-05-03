@@ -3,6 +3,8 @@
 
 ## Essentials
 
+
+```
 roles/essentials                    # Role name
 ├── files                           # Files directory  ( must be named like this ) 
 │   ├── 01-custom.conf              # Drop-in for network interface
@@ -18,7 +20,7 @@ roles/essentials                    # Role name
     ├── loopback.yml                # Task for adding additiional loopback address
     ├── main.yml                    # Main instruction
     └── packages.yml                # Task for installing system packages by pacman 
-
+```
 
 ###  DNS
 
