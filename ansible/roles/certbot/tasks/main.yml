@@ -1,5 +1,6 @@
 ---
 - name: Install packages
+  ansible.builtin.pacman:
     update_cache: yes
     name:
       - certbot
