@@ -1,0 +1,15 @@
+---
+- name: Set hostname
+  ansible.builtin.hostname:
+    name: vps.stockhause.info
+    use: systemd
+
+- name: Set localhost
+  ansible.builtin.lineinfile:
+    path: /etc/hosts
+    line: 127.0.0.1 localhost.localdomain localhost
+
+- name: Set vps.stockhause.info
+  ansible.builtin.lineinfile:
+    path: /etc/hosts
+    line: 139.144.78.41 vps.stockhause.info vps
